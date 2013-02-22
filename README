@@ -1,0 +1,30 @@
+This is a README for the Custom Intrusion Detection System
+
+The program consists of 4 parts.
+1. The Thread Spawning module
+2. The Traffic capturing module
+3. The Pattern matching and hence Detecting Intrusion Module
+4. Misc Modules(Logging,Pcap generation,Interprocess Communication)
+
+To run the program type
+(you must be super user or have sudo)
+
+# python ids.py [interface]
+or
+# chmod +x ids.py
+# ./ids.py
+
+If running inside a VM. This will require the password to the administrative account of the Host Operating System
+
+*IMPORTANT*
+Kindly install the following packages before attempting to run this system
+
+install dpkt from https://code.google.com/p/dpkt/
+or type
+$ sudo apt-get intall python-dkpt for debain based distrubutions
+
+This package uses the threading module in python
+
+If absent in your compilation Kindly install python-extended-threading as 
+
+$ sudo apt-get install python-extended-threading for debian
